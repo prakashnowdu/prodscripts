@@ -1,8 +1,9 @@
 #!/bin/bash
 echo "enter command"
 read cmd
-`$cmd`
-if[$? == 0]
+output=`$cmd`
+a=`$cmd`
+if [ "$?" == 0 ];
 then
 echo "command successful"
 else
